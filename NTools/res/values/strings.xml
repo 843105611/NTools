@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NTools</string>
+    <string name="action_control_pc">控制电脑</string>
+    <string name="action_settings">系统设置</string>
+    <string name="action_change_view">切换视图</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_copy">复制</string>
+    <string name="action_paste">粘贴</string>
+    <string name="action_del">删除</string>
+    <string name="action_cancel">取消</string>
+
+    <string name="action_sort">排序</string>
+    <string name="action_sort_by_filename">按文件名排序</string>
+    <string name="action_sort_by_date">按修改时间排序</string>
+
+
+    <string name="title_activity_image_show">ImageShow</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    
+    <string name="startPC">开机</string>
+
+
+</resources>

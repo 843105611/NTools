@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_music_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarMusic"
+        android:layout_alignLeft="@+id/btn_pre_music"
+        android:layout_alignStart="@+id/btn_pre_music"
+        android:layout_alignRight="@+id/btn_next_muisic"
+        android:layout_alignEnd="@+id/btn_next_muisic"
+        android:layout_below="@+id/tv_music_info" />
+
+    <ListView
+        android:id="@+id/music_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_next_muisic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="暂停"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_play_pause"
+        android:layout_above="@+id/music_listview"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_music_current_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/seekBarMusic"
+        android:layout_toStartOf="@+id/seekBarMusic"
+        android:gravity="center_vertical|right"
+
+        android:layout_alignTop="@+id/seekBarMusic"
+        android:layout_alignBottom="@+id/seekBarMusic" />
+
+    <TextView
+        android:gravity="center_vertical|left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_music_total_time"
+        android:layout_alignTop="@+id/seekBarMusic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/seekBarMusic"
+        android:layout_above="@+id/btn_pre_music"
+        android:layout_toRightOf="@+id/seekBarMusic"
+
+        />
+
+    <Button
+        android:text="上一首"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/btn_pre_music"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_below="@+id/seekBarMusic"
+        android:layout_toLeftOf="@+id/btn_play_pause"
+        android:layout_toStartOf="@+id/btn_play_pause" />
+
+    <Button
+        android:text="下一首"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_next_muisic"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignBaseline="@+id/btn_pre_music"
+        android:layout_alignBottom="@+id/btn_pre_music"
+        android:layout_toRightOf="@+id/btn_play_pause"
+        android:layout_toEndOf="@+id/btn_play_pause" />
+
+    <boshuai.net.ntools.media.VerticalSeekBar
+        android:id="@+id/seekBar_music_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/seekBarMusic"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btn_next_muisic"
+        />
+
+</RelativeLayout>
